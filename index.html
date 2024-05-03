@@ -1,55 +1,88 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather App</title>
-        <link rel="stylesheet" href="style.css">
 
-    </head>
+<head>
+    <!-- Meta tags for character encoding and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Weather App</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external JavaScript file -->
+    <script src="myScript.js"></script>
+</head>
 
-    <body>
-        <div class="card">
-            <div class="search">
-                <input type="text" , placeholder="Enter city name">
-                <button>
-                    <img src="images/search.png">
-                </button>
-            </div>
-    
+<body>
+    <!-- Main card container -->
+    <div class="card">
+        <!-- Search input section -->
+        <div class="search">
+            <!-- Input field for city name -->
+            <input type="text" , placeholder="Enter city name">
+            <!-- Search button -->
+            <button>
+                <!-- Search icon -->
+                <img src="images/search.png">
+            </button>
+        </div>
+        <!-- Error message section -->
+        <div class="error-message">
+            Invalid input!
+        </div>
+
+        <!-- Weather information section -->
+        <div class="weather">
+            <!-- Weather state image -->
             <div class="weather-state-img">
-                <img src="images/rain.png"> 
+                <img src="images/rain.png">
             </div>
-    
+
+            <!-- Weather state information -->
             <div class="weather-state-info">
+                <!-- Temperature information -->
                 <div class="temperature">
                     <p>22°C</p>
                 </div>
+                <!-- City name -->
                 <div class="city-name">
-                    <p>Egypt</p>
+                    <p>egypt</p>
                 </div>
             </div>
-    
+
+            <!-- Additional weather information -->
             <div class="weather-information">
+                <!-- Humidity information -->
                 <div class="humidity">
+                    <!-- Humidity icon -->
                     <div class="humidity-img">
                         <img src="images/humidity.png">
                     </div>
+                    <!-- Humidity percentage -->
                     <div class="humidity-info">
-                        <p>50%</p>
+                        <p class="humidity">50%</p>
+                        <!-- Label for humidity -->
                         <p>Humidity</p>
                     </div>
                 </div>
+                <!-- Wind speed information -->
                 <div class="wind-speed">
+                    <!-- Wind speed icon -->
                     <div class="speed-img">
                         <img src="images/wind.png">
                     </div>
+                    <!-- Wind speed value -->
                     <div class="humidity-info">
-                        <p>15 Km/h</p>
+                        <p class="speed">15 Km/h</p>
+                        <!-- Label for wind speed -->
                         <p>Wind Speed</p>
                     </div>
                 </div>
             </div>
         </div>
-   
-    </body>
+
+    </div>
+
+</body>
+
 </html>
